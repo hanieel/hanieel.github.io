@@ -37,7 +37,7 @@ table {
 .noscroll { overflow: hidden; }
 
 .cycle-slideshow {
-	overflow:hidden;
+	/*overflow:hidden;*/
 	z-index: 1;	
 }
 
@@ -1934,6 +1934,25 @@ header {
 .section_bottom_btn {
   	margin-top: -156px;
 }
+
+.slides_content .slides_ticket {
+  float: none;
+  margin: 123px auto 0px;
+}
+
+.slides_content .slides_dates {
+  margin: -215px auto 0px;
+}
+
+.slides_content h1.slides_title {
+  padding-top: 75px;
+}
+
+.slides_content .slides_dates span {
+   margin-top: 9px;
+}
+
+
 
 
 
