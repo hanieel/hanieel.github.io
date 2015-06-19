@@ -1,0 +1,115 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/******************* FONT ICONS ************************/
+@font-face {
+  font-family: 'slide_arrow_fontello';
+  src: url('../font/slide_arrow_fontello.eot?59297818');
+  src: url('../font/slide_arrow_fontello.eot?59297818#iefix') format('embedded-opentype'),
+       url('../font/slide_arrow_fontello.woff?59297818') format('woff'),
+       url('../font/slide_arrow_fontello.ttf?59297818') format('truetype'),
+       url('../font/slide_arrow_fontello.svg?59297818#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tile_view_fontello';
+  src: url('../font/tile_view_fontello.eot?59297818');
+  src: url('../font/tile_view_fontello.eot?59297818#iefix') format('embedded-opentype'),
+       url('../font/tile_view_fontello.woff?59297818') format('woff'),
+       url('../font/tile_view_fontello.ttf?59297818') format('truetype'),
+       url('../font/tile_view_fontello.svg?59297818#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'burger_icon_fontello';
+  src: url('../font/burger_icon_fontello.eot?59297818');
+  src: url('../font/burger_icon_fontello.eot?59297818#iefix') format('embedded-opentype'),
+       url('../font/burger_icon_fontello.woff?59297818') format('woff'),
+       url('../font/burger_icon_fontello.ttf?59297818') format('truetype'),
+       url('../font/burger_icon_fontello.svg?59297818#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'arrow_fontello';
+	src: url('../font/arrow_fontello.eot?43131501');
+	src: url('../font/arrow_fontello.eot?43131501#iefix') format('embedded-opentype'),
+		 url('../font/arrow_fontello.woff?43131501') format('woff'),
+		 url('../font/arrow_fontello.ttf?43131501') format('truetype'),
+		 url('../font/arrow_fontello.svg?43131501#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'flyout-fontello';
+  src: url('../font/flyout_fontello.eot?57181769');
+  src: url('../font/flyout_fontello.eot?57181769#iefix') format('embedded-opentype'),
+       url('../font/flyout_fontello.woff?57181769') format('woff'),
+       url('../font/flyout_fontello.ttf?57181769') format('truetype'),
+       url('../font/flyout_fontello.svg?57181769#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*******************************************************/
+
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	letter-spacing:2;
+	font-size:1em;
+	background: $white;
+	line-height:1em;
+	@include default-text-color($black);
+}
+
+#wrapper {
+	background: $white;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+article p a {
+	color: $blue;
+	&:hover, &:focus {
+		color: $duke-blue;
+	}
+	&:visited {
+		color: $blue-gray;
+	}
+}

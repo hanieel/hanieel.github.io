@@ -1,0 +1,618 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SASS Tutorial</title>
+    
+    <!-- responsive: handheld smart devices -->
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width; initial-scale=0.666667; maximum-scale=0.666667; user-scalable=0">
+    <meta name="viewport" content="width=device-width">
+    <!-- responsive: handheld smart devices ends -->
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- include jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- include Cycle2 -->
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/jquery.cycle2.carousel.min.js"></script>
+    <!-- include tabs ui-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--google fonts - OSWALD-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!--google fonts - Merriweather-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+     
+     <!--[if IE]>
+     <![endif]-->
+
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper_container">
+
+      <!--flyout menu-->
+        <input type="radio" id="nav-expand" name="nav" class="invis" />
+          <label for="nav-collapse" class="close"></label>
+            <label for="nav-expand" class="btn-label">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+            </label>
+          <div id="flyout_menu_container" class="nav-side"> 
+            <ul id="menu-flyout-menu" class="flyout_nav">
+               <li class="menu-item menu-item-has-children"><a href="#">Tickets</a>
+                <!-- sub menu -->
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Purchasing Tickets Online</a></li>
+                  <li class="menu-item"><a href="#">Purchasing Tickets By Phone</a></li>
+                  <li class="menu-item"><a href="#">Purchasing Tickets At A Box Office</a></li>
+                  <li class="menu-item"><a href="#">Events Listing</a></li>
+                  <li class="menu-item"><a href="#">Contests</a></li>
+                  <li class="menu-item"><a href="#">Gift Certificates</a></li>
+                </ul>
+                <!-- sub menu ENDS-->
+              </li>
+              <li class="menu-item"><a href="#">Plan Your Visit</a></li>
+              <li class="menu-item"><a href="#">VIP Members</a></li>
+              <li class="menu-item"><a href="#">About Us</a></li>
+            </ul>
+          </div>
+         
+       
+        <!--flyout menu ENDS -->
+        <!-- new! -->
+      <input type="radio" id="nav-collapse" name="nav" checked="checked" class="invis" />
+      <!---lp wrapper-->
+      <div class="lp_wrapper" role="main">
+        <!--header -->
+        <header id="header_banner" class="clearfix headeropen">
+         <div id="header_top">
+          <div id="logo_container"><img id="logo" src="images/logo.png" alt="logo"/></div>
+          <div class="search_bar">
+            <ul id="social_icons">
+                <li class="get_connected">Get Connected</li>
+                <li><a class="instagram_icon" href=""></a></li>
+                <li><a class="twitter_icon" href=""></a></li>
+                <li><a class="facebook_icon" href=""></a></li>
+                <li><a class="youtube_icon" href=""></a></li>
+            </ul>
+            <div id="searchbar_content">
+              
+              <input type="text" placeholder="Search Events" id="search-input">
+              <a href="#" id="search-button">Login</a>
+          </div>
+          </div>
+          <!-- horz-nav -->
+          <nav id="horz-nav">
+            <ul id="menu-page-nav">
+              <li class="menu-item menu-item-has-children"><a href="#">Tickets</a>
+                <!-- sub menu -->
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Purchasing Tickets Online</a></li>
+                  <li class="menu-item"><a href="#">Purchasing Tickets By Phone</a></li>
+                  <li class="menu-item"><a href="#">Purchasing Tickets At A Box Office</a></li>
+                  <li class="menu-item"><a href="#">Events Listing</a></li>
+                  <li class="menu-item"><a href="#">Contests</a></li>
+                  <li class="menu-item"><a href="#">Gift Certificates</a></li>
+                </ul>
+                <!-- sub menu ENDS-->
+              </li>
+              <li class="menu-item"><a href="#">Plan Your Visit</a></li>
+              <li class="menu-item"><a href="#">VIP Members</a></li>
+              <li class="menu-item"><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+          <!-- horz-nav ENDS-->
+         </div>
+         <!-- header bottom -->
+         <div id="header_bottom" class="clearfix">
+          <!-- slider area -->
+          <div class="slider_area">
+            <div class="slider cycle-slideshow">
+              <!-- slides -->
+              <div id="slide_1" class="col_slides">
+                <img src="images/azar_and_3rd.jpg" alt="Azar and III" />
+                <!-- slide content -->
+                <div class="slides_content inner">
+                  <h1 class="slides_title">Azar & III <em>Electro-Pop Quartet Strikes Tour</em></h1>
+                  <div class="slides_dates">
+                    <span>Saturday</span> September 22
+                  </div>
+                  <div class="slides_ticket">
+                    <p>Buy Tickets</p>
+                  </div>  
+                </div>
+                <!-- slide content ENDS -->
+              </div>  
+              <!-- slides ENDS-->
+              <!-- slides -->
+              <div id="slide_2" class="col_slides">
+                <img src="images/avett_brothers.jpg" alt="The Avett Brothers" />
+                <!-- slide content -->
+                <div class="slides_content inner">
+                  <h1 class="slides_title">The Avett Brothers <em>With Special Guest 'Nora Jones'</em></h1>
+                  <div class="slides_dates">
+                    <span>Saturday</span> September 29
+                  </div>
+                  <div class="slides_ticket">
+                    <p>Buy Tickets</p>
+                  </div>  
+                </div>
+                <!-- slide content ENDS -->
+              </div>  
+              <!-- slides ENDS-->
+              <!-- slides -->
+              <div id="slide_3" class="col_slides">
+                <img src="images/black_keys.jpg" alt="The Black Keys" />
+                <!-- slide content -->
+                <div class="slides_content inner">
+                  <h1 class="slides_title">The Black Keys <em>The fever Tour</em></h1>
+                  <div class="slides_dates">
+                    <span>Saturday</span> October 12
+                  </div>
+                  <div class="slides_ticket">
+                    <p>Buy Tickets</p>
+                  </div>  
+                </div>
+                <!-- slide content ENDS -->
+              </div>  
+              <!-- slides ENDS-->
+            </div>  
+          </div> 
+          <!-- slider area ENDS --> 
+            <!--section bottom btn-->
+            <div class="section_bottom_btn">
+              <div class="center">
+                  <a href="javascript();" class="prev slides_nav"></a>  
+                  <a href="javascript();" class="next slides_nav"></a>
+                  <div class="cycle-pager slides_nav"></div>
+              </div>
+            </div>
+            <!--section bottom btn ENDS-->
+         </div>
+         <!-- header bottom ENDS -->
+        </header>
+        <!--header ENDS-->
+        <!-- main - content -->
+        <main id="content" class="clearfix">
+        <!-- SECTION 1 : UPCOMING EVENTS -->
+        <section id="section_1" class="section_area clearfix">
+            <!--entry container -->
+            <div class="entry_container inner">
+                <!-- entry -->
+                <div class=" entry clearfix">
+                  <div class="heading_area">
+                    <div class="toggle_icons">
+                      <span class="tile_icon"><a href="" ></a> </span>
+                      <span class="list_icon"><a href="" ></a></span>
+                    </div>
+                    <h1>Upcoming Events</h1>
+                    
+                  </div>
+                  <ul>
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/nicki.jpg" />
+                        <div class="tile_title_date">
+                          <span class="tile_date"> July 25, 2015</span>
+                          <span class="tile_day">Friday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Nicki Minaj <span>The Pink Print Tour</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/jonas.jpg" />
+                        <div class="tile_title_date">
+                          <span class="tile_date">July 30, 2015</span>
+                          <span class="tile_day">Saturday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Nick Jonas <span>'Live In Concert' Tour</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+                        
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/taylor.jpg" />
+                        <div class="tile_title_date">
+                          <span class="tile_date">August 06, 2015</span>
+                          <span class="tile_day">Thursday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Taylor Swift<span>The 1989 World Tour</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+                        
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/smith.jpg" />
+                         <div class="tile_title_date">
+                          <span class="tile_date">August 15, 2015</span>
+                          <span class="tile_day">Saturday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Sam Smith<span>In The Lonely Hour Tour</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+                        
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/iggy.jpg" />
+                         <div class="tile_title_date">
+                          <span class="tile_date"> August 22, 2015</span>
+                          <span class="tile_day">Friday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Iggy Azalea<span>'Great Escape' Tour</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+                      
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                    <!-- tile container -->
+                    <li class="tile_container">
+                      <div class="tile_content">
+                        <img class="tile_img" src="images/flowers.jpg" />
+                         <div class="tile_title_date">
+                          <span class="tile_date">August 30, 2015</span>
+                          <span class="tile_day">Saturday</span>
+                        </div>
+                        <a class="sm buy_ticket_icon" href="#">Buy Ticket</a>
+                        <h1 class="tile_title">Brandon Flowers<span>with Temper Trap</span></h1>
+                        <div class="tile_info">
+                          <a class="buy_ticket_icon" href="#">Buy Ticket</a>
+                          <a class="more_info_icon" href="#">More Info</a>
+                        </div>
+                       
+                      </div>
+                    </li>
+                    <!-- tile container ENDS-->
+                  </ul>
+                  <div id="loading_events">
+                    <img src="images/loading_events.svg" alt="loading" />
+                    <p>Load more events</p>
+                  </div>
+                </div>
+                <!-- entry ENDS-->
+            </div>      
+            <!--entry container ENDS -->
+        </section> 
+        <!-- SECTION 1 : UPCOMING EVENTS  ENDS-->
+
+        <!-- SECTION 2 : NEWS LETTER SIGNUP -->
+        <section id="section_2" class="section_area clearfix">
+            <!--entry container -->
+            <div class="entry_container inner">
+                <!-- entry -->
+                <div class=" entry clearfix">
+                  <h1>Newsletter Signup</h1>
+                  <p>Stay updated on the best concerts and most hip events!</p>
+                  <a class="newsletter_btn" href=""> Get Connected</a>
+                </div>
+                <!-- entry ENDS-->
+            </div>      
+            <!--entry container ENDS -->
+        </section> 
+        <!-- SECTION 2 : NEWS LETTER SIGNUP ENDS-->
+
+        <!-- SECTION 3 -->
+        <section id="section_3" class="section_area clearfix">
+            <!--entry container -->
+            <div class="entry_container inner">
+                <!-- entry -->
+                <div class=" entry clearfix">
+                  <!-- column 1 -->
+                  <div class="left col_1">
+                    <h1 class="column_heading">Get Social <span>Stay Connected Where Ever You Are!</span></h1>
+                    <div class="left_col_1_container">
+                    <!-- TABS -->
+                    <div id="tabs">
+                      <ul id="tabs_selectors">
+                          <li>
+                              <a href="#twitter" class="sec_3_nav_tabs">
+                                  Twitter
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#instagram" class="sec_3_nav_tabs">
+                                  Instagram
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#facebook" class="sec_3_nav_tabs">
+                                  Facebook
+                              </a>
+                          </li>
+                      </ul>
+                      <!-- twitter tab -->
+                      <div id="twitter" class="sec_3_content_tabs">
+                         <div class="top_center">
+                            <h2>Follow <a href="">@CHVENUE</a></h2>
+                            <div class="slides_nav_container">
+                              <a href="javascript();" class="prev slides2_nav"></a> 
+                              <a href="javascript();" class="next slides2_nav"></a> 
+                            </div>  
+                          </div>
+                         <!-- tab slides --> 
+                         <div class="slider2 cycle-slideshow">
+                           
+                            <div id="slide2_1" class="slides2">
+                              <h1 class="title">@CHVENUE</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                           
+                            <div id="slide2_2" class="slides2">
+                              <h1 class="title">@CHVENUE 2</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                           
+                            <div id="slide2_3" class="slides2">
+                              <h1 class="title">@CHVENUE 3</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                           
+                          </div> 
+                          <!-- tab slides ENDS-->
+                      </div>
+                      <!-- twitter tab ENDS-->
+                      <!-- instagram tab -->
+                      <div id="instagram" class="sec_3_content_tabs">
+                        <div class="top_center">
+                            <h2>Follow <a href="">@CHVENUE INSTA</a></h2>
+                            <div class="slides_nav_container">
+                              <a href="javascript();" class="prev slides3_nav"></a> 
+                              <a href="javascript();" class="next slides3_nav"></a> 
+                            </div>  
+                          </div>
+                         <!-- tab slides --> 
+                         <div class="slider3 cycle-slideshow">
+                            <!-- slides -->
+                            <div id="slide3_1" class="slides3">
+                              <h1 class="title">@CHVENUE</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                            <!-- slides -->
+                            <div id="slide3_2" class="slides3">
+                              <h1 class="title">@CHVENUE 2</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                            <!-- slides -->
+                            <div id="slide3_3" class="slides3">
+                              <h1 class="title">@CHVENUE 3</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                          </div> 
+                          <!-- tab slides ENDS--> 
+                      </div>
+                      <!-- instagram tab ENDS-->
+                      <!-- facebook tab -->
+                      <div id="facebook" class="sec_3_content_tabs">
+                         <div class="top_center">
+                            <h2>Follow <a href="">@CHVENUE FACEBOOK</a></h2>
+                              <div class="slides_nav_container">
+                                <a href="javascript();" class="prev slides4_nav"></a> 
+                                <a href="javascript();" class="next slides4_nav"></a>
+                              </div>   
+                          </div>
+                         <!-- tab slides --> 
+                         <div class="slider4 cycle-slideshow">
+                            <!-- slides -->
+                            <div id="slide4_1" class="slides4">
+                              <h1 class="title">@CHVENUE</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                            <!-- slides -->
+                            <div id="slide4_2" class="slides4">
+                              <h1 class="title">@CHVENUE 2</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                            <!-- slides -->
+                            <div id="slide4_3" class="slides4">
+                              <h1 class="title">@CHVENUE 3</h1>
+                              <p>@axs: .@dylangardner23 will be opening for 'The Walking Dead's' @emmykinney on her tour! bit.ly/1GppUEs pic.twitter.com/bgnkAEIB5O</p>
+                              <div class="bottom_date">
+                                <p>8:14pm/3 APR 2015</p>
+                                <span class="refresh_icon"></span>
+                                <span class="share_icon"></span>
+                                <span class="fav_icon"></span>
+                              </div>
+                            </div>  
+                            <!-- slides ENDS-->
+                          </div> 
+                          <!-- tab slides ENDS--> 
+                      </div>
+                      <!-- facebook tab -->
+                    </div>
+                    <!-- TABS ENDS-->
+                  </div>
+                  </div>
+                  <!-- column 1 ENDS-->
+                  <!-- column 2 -->
+                  <div class="right col_2">
+                    <h1 class="column_heading">Get Directions <span>Map Out Your Trip!</span></h1>
+                    <div class="right_col_2_container">
+                      <address><b>Address:</b> 5727 Westpark Drive., Suite 108, Charlotte, NC 28217</address>
+                      <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.9232023582813!2d-80.888494!3d35.158536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569ec86c258ab3%3A0xd5b6aad6b8df4899!2s5727+Westpark+Dr+%23108%2C+Charlotte%2C+NC+28217!5e0!3m2!1sen!2sus!4v1434509359667" frameborder="0" style="border:0"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- column 2 ENDS-->
+                </div>
+                <!-- entry ENDS-->
+            </div>      
+            <!--entry container ENDS -->
+        </section> 
+        <!-- SECTION 3 ENDS-->
+
+        <!-- SECTION 4 -->
+        <section id="section_4" class="section_area clearfix">
+            <!--entry container -->
+            <div class="entry_container inner">
+                <!-- entry -->
+                <div class=" entry clearfix">
+                  <ul class="ul_column">
+                    <li class="ul_title">Tickets</li>
+                    <li><a href="">Purchasing Tickets Online</a></li>
+                    <li><a href="">Purchasing Tickets By Phone</a></li>
+                    <li><a href="">Purchasing Tickets At A Box Office</a></li>
+                    <li><a href="">Events Listing</a></li>
+                    <li><a href="">Contests</a></li>
+                    <li><a href="">Gift Certificates</a></li>
+                  </ul>
+                  <ul class="ul_column">
+                    <li class="ul_title">Plan Your Visit</li>
+                    <li><a href="">Directions</a></li>
+                    <li><a href="">Parking</a></li>
+                    <li><a href="">Public Transportation</a></li>
+                    <li><a href="">Hotels</a></li>
+                    <li><a href="">Dining Options</a></li>
+                    <li><a href="">FAQ</a></li>
+                  </ul>
+                  <ul class="ul_column">
+                    <li class="ul_title">VIP Members</li>
+                    <li><a href="">Fan Guide</a></li>
+                    <li><a href="">Member Rewards</a></li>
+                    <li><a href="">Gift Certificates</a></li>
+                    <li><a href="">Food & Beverages</a></li>
+                    <li><a href="">Account Login</a></li>
+                  </ul>
+                  <ul class="ul_column">
+                    <li class="ul_title">About Us</li>
+                    <li><a href="">Partners & Offical Suppliers </a></li>
+                    <li><a href="">News & Media</a></li>
+                    <li><a href="">Book An Event</a></li>
+                    <li><a href="">General & Technical Info</a></li>
+                    <li><a href="">Sponsoring & Advertising</a></li>
+                    <li><a href="">Join Out Team - Careers</a></li>
+                  </ul>
+                </div>
+                <!-- entry ENDS-->
+            </div>      
+            <!--entry container ENDS -->
+        </section> 
+        <!-- SECTION 4 ENDS-->
+
+        <!-- SECTION 5 -->
+        <section id="section_5" class="section_area clearfix">
+            <!--entry container -->
+            <div class="entry_container inner">
+                <!-- entry -->
+                <div class=" entry clearfix">
+                  <ul>
+                    <li><a class="partner_logos pepsi" href=""><!--<img src="images/" alt=""/>--></a></li>
+                    <li><a class="partner_logos lotto" href=""><!--<img src="images/" alt=""/>--></a></li>
+                    <li><a class="partner_logos redbull" href=""><!--<img src="images/" alt=""/>--></a></li>
+                    <li><a class="partner_logos pizzahut" href=""><!--<img src="images/" alt=""/>--></a></li>
+                    <li><a class="partner_logos miller" href=""><!--<img src="images/" alt=""/>--></a></li>
+                  </ul>
+                </div>
+                <!-- entry ENDS-->
+            </div>      
+            <!--entry container ENDS -->
+        </section> 
+        <!-- SECTION 5 ENDS-->
+        </main>
+        <!-- main - content ENDS-->
+        <!-- footer -->
+        <footer>
+          <div class="inner">
+            <div id="copyright">Copyright © 2015.CHVenue All Rights Reserved.</div>
+            <div id="company_title">a <b>carbonhouse</b> experience</div>
+        </div>
+        </footer>
+        <!-- footer ENDS-->
+      <label for="nav-collapse" class="overlay"></label>
+    </div>
+        <!-- sp_wrapper ends -->  
+    </div> 
+    <!-- Wrapper ENDS-->
+  </body>
+</html>
