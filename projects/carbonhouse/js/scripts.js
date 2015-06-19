@@ -67,7 +67,10 @@ jQuery(document).ready(function($){
    //SECTION: HEADER				  
 		  if($('.slider').hasClass('cycle-slideshow')) {
 		  		  console.log('HELLO it should work!!!!');
-				  $('.slider').attr('data-cycle-fx', 'scrollHorz');
+		  		  $('.slider').attr('data-cycle--swipe-fx', 'scrollHorz');
+				  $('.slider').attr('data-cycle-swipe', 'true');
+
+				  //$('.slider').attr('data-cycle-fx', 'scrollHorz');
 				  $('.slider').attr('data-cycle-timeout', '0');
 				  $('.slider').attr('data-cycle-prev', '.prev.slides_nav');
 				  $('.slider').attr('data-cycle-next', '.next.slides_nav');
