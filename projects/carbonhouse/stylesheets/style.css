@@ -747,7 +747,7 @@ table {
 
 /* line 39, ../sass/style.scss */
 .cycle-slideshow {
-  /*overflow:hidden;*/
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -2812,58 +2812,48 @@ footer #company_title {
   .slides_content .slides_dates {
     margin: -215px auto 0px;
   }
-
-  /* line 1947, ../sass/style.scss */
-  .slides_content h1.slides_title {
-    padding-top: 75px;
-  }
-
-  /* line 1951, ../sass/style.scss */
-  .slides_content .slides_dates span {
-    margin-top: 9px;
-  }
 }
 /****************************** Media - Screen, width 320 ******************************/
 @media screen and (max-width: 320px) {
-  /* line 1967, ../sass/style.scss */
+  /* line 1956, ../sass/style.scss */
   .slides_content {
     height: 350px;
     margin-top: -8px;
   }
 
-  /* line 1972, ../sass/style.scss */
+  /* line 1961, ../sass/style.scss */
   .section_bottom_btn {
     margin-top: -134px;
   }
 
-  /* line 1976, ../sass/style.scss */
+  /* line 1965, ../sass/style.scss */
   a.sm.buy_ticket_icon {
     padding: 14px 41px 14px 25%;
   }
 
-  /* line 1980, ../sass/style.scss */
+  /* line 1969, ../sass/style.scss */
   .pos {
     right: 263px !important;
   }
 
-  /* line 1984, ../sass/style.scss */
+  /* line 1973, ../sass/style.scss */
   ul.flyout_nav li, ul.flyout_nav2 li {
     width: 259px;
   }
 
-  /* line 1988, ../sass/style.scss */
+  /* line 1977, ../sass/style.scss */
   .tile_content h1.tile_title {
     font-size: 15px;
     font-weight: 400;
   }
 
-  /* line 1993, ../sass/style.scss */
+  /* line 1982, ../sass/style.scss */
   .tile_content h1.tile_title span {
     margin-top: 0px;
     font-size: 11px;
   }
 
-  /* line 1998, ../sass/style.scss */
+  /* line 1987, ../sass/style.scss */
   #section_2.section_area .entry h1 {
     font-size: 34px;
     margin-top: 0px;
